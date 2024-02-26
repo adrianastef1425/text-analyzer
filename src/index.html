@@ -7,29 +7,45 @@
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
 
+  <script src="index.js" type="module"></script>
+  <script src="analyzer.js" type="module"></script>
 </head>
 
 <body>
 
-  <h1 class="title">🔥ANALIZADOR DE TEXTO🔥</h1>
+  <header>
+  <h1>ANALIZADOR DE TEXTO</h1>
+  </header>
+
+  <div>
+    <ul>
+      <label>Caracteres:</label>
+      <li class="datolista1">0</li>
+      <label>Palabras:</label>
+      <li class="datolista2">0</li>
+      <label>Caracteres Sin Espacios:</label>
+      <li class="datolista3">0</li>
+      <label>Numeros:</label>
+      <li class="datolista4">0</li>
+      <label>Suma Numeros:</label>
+      <li class="datolista5">0</li>
+      <label>Promedio Longitud:</label>
+      <li class="datolista6">0</li>
+
+    </ul>
+  </div>
   
   <div>
-      <label>Caracteres: </label>
-      <label id="datolabel"></label>
+    <textarea name="user-input" rows="4" cols="50"></textarea>
   </div>
 
-  <form>
-      <input type="text" name="datoform" id="datoform" /><br />
-  </form>
-
   <footer>
-    <small>
+    <p>
       Autora: Adri
-    </small>
+    </p>
   </footer>
 
-  <script src="index.js" type="module"></script>
-  <script src="analyzer.js" type="module"></script>
+  <button id = "reset-button" type = "button">Limpiar métricas</button>
 
 </body>
 </html>
