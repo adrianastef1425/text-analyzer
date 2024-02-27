@@ -1,0 +1,39 @@
+header {
+    color:blueviolet;
+  }
+
+footer {
+    color: brown;
+}
+
+.datolista1 {
+    color: blueviolet;
+}
+
+.datolista2 {
+    color: blueviolet;
+}
+
+.datolista3 {
+    color: blueviolet;
+}
+
+.datolista4 {
+    color: blueviolet;
+}
+
+.datolista5 {
+    color: blueviolet;
+}
+
+.datolista6 {
+    color: blueviolet;
+}
+
+textarea[name = "user-input"]{
+    background-color: yellow;
+}
+
+#reset-button{
+    background-color: rgb(0, 255, 47);
+}
