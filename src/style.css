@@ -1,39 +1,31 @@
 header {
-    color:blueviolet;
+    color:rgb(226, 43, 104);
   }
 
 footer {
-    color: brown;
+    color: rgb(201, 34, 146);
 }
 
 .datolista1 {
-    color: blueviolet;
+    list-style: none;
+    color: rgb(170, 85, 28);
+    background-color: rgb(232, 215, 180);
+    box-sizing: border-box;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 4px;
+    margin: 30px 60px;
+    padding: 10px 20px;
 }
 
-.datolista2 {
-    color: blueviolet;
-}
-
-.datolista3 {
-    color: blueviolet;
-}
-
-.datolista4 {
-    color: blueviolet;
-}
-
-.datolista5 {
-    color: blueviolet;
-}
-
-.datolista6 {
-    color: blueviolet;
-}
-
-textarea[name = "user-input"]{
-    background-color: yellow;
+textarea[name="user-input"]{
+    background-color: rgb(235, 212, 221);
+    color: rgb(160, 18, 127);
 }
 
 #reset-button{
-    background-color: rgb(0, 255, 47);
+    background-color: rgb(141, 200, 226);
+    color: rgb(7, 7, 128);
 }
+
