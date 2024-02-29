@@ -55,3 +55,20 @@
     }
    
     return sumanumeros; 
+
+
+    ///////////
+    debajo de footer css
+
+.datolista1 {
+    list-style: none;
+    color: rgb(170, 85, 28);
+    background-color: rgb(232, 215, 180);
+    box-sizing: border-box;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 4px;
+    margin: 10px 60px;
+    padding: 10px 20px;
+}

@@ -1,31 +1,85 @@
 header {
-    color:rgb(226, 43, 104);
+    color:rgb(182, 36, 79);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans Extrabold", sans-serif;
   }
 
 footer {
-    color: rgb(201, 34, 146);
+    color: rgb(182, 36, 79);
+    margin: 30px 1350px;
 }
 
-.datolista1 {
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+  }
+  
+  .datolista1 {
     list-style: none;
-    color: rgb(170, 85, 28);
-    background-color: rgb(232, 215, 180);
-    box-sizing: border-box;
-    border-bottom-width: 4px;
-    border-left-width: 4px;
-    border-right-width: 4px;
-    border-top-width: 4px;
-    margin: 30px 60px;
-    padding: 10px 20px;
-}
+    color: rgb(182, 36, 79);
+    background-color: rgb(251, 183, 192);
+    border: 1px solid rgb(251, 183, 192);
+    border-radius: 10px;
+    margin: 5px; /* Ajusta el margen según lo necesario */
+    padding: 5px 10px; /* Ajusta el relleno según lo necesario */
+    font-size: medium; /* Tamaño de fuente más pequeño */
+    text-align: left; /* Texto centrado */
+    box-sizing: content-box; /* Tamaño total del cuadro incluyendo el borde */
+    height: auto;
+    font-family: "Gill Sans Extrabold", sans-serif;
+  }
+  
 
 textarea[name="user-input"]{
-    background-color: rgb(235, 212, 221);
-    color: rgb(160, 18, 127);
+    background-color: rgb(201, 207, 204);
+    color: rgb(64, 86, 244);
+    box-sizing: border-box;
+    border: 1px solid rgb(201, 207, 204);
+    margin: 20px 500px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+
 }
 
 #reset-button{
-    background-color: rgb(141, 200, 226);
-    color: rgb(7, 7, 128);
+    background-color: rgb(202, 83, 16);
+    color: rgb(255, 243, 194);
+    box-sizing: border-box;
+    border: 1px solid rgb(202, 83, 16);
+    margin: 10px 630px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: "Gill Sans Extrabold", sans-serif;
 }
 
+.contenedor {
+    display: flex;
+    justify-content: center
+}
+
+.conten {
+    display: flex;
+    justify-content: center;
+    
+}
+
+:root {
+    background: rgb(255, 243, 194);
+  }
+
+
+.contenbu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}

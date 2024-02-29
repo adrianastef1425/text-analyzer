@@ -17,31 +17,38 @@
   <h1>ANALIZADOR DE TEXTO</h1>
   </header>
 
-  <div>
+  <div class="contenedor">
     <ul>
-
-      
       <li class="datolista1">Caracteres: 0</li>
       <li class="datolista1">Palabras: 0</li>
       <li class="datolista1">Caracteres Sin Espacios: 0</li>
       <li class="datolista1">Numeros: 0</li>
       <li class="datolista1">Suma Numeros: 0</li>
       <li class="datolista1">Promedio Longitud: 0</li>
-
     </ul>
   </div>
   
   <div>
-    <textarea name="user-input" rows="4" cols="50"></textarea>
+    <textarea name="user-input" rows="4" cols="45"></textarea>
+  </div>
+
+  <div class="contenbu">
+    <button id = "reset-button" type = "button">Limpiar</button>
+  </div>
+
+  <div class="conten">
+    <img
+      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEBAQEhAPFRUQDw8PFQ8VDxUQDw8QFRUWFxUWFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQFy0fHSUtLSsuLS0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLy0tLS0uLS0tLS0tLS0tLSstLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAAAQIDBAUGBwj/xAA3EAACAgECBAQDCAEDBQEAAAAAAQIRAwQhEjFBUQVhcYEGIpETMqGxwdHh8EIUI1IWM2KC8Qf/xAAbAQACAwEBAQAAAAAAAAAAAAAAAQIDBAUGB//EACoRAAICAQQCAAUEAwAAAAAAAAABAhEDBBIhMQVBIlFhcdETFIGhksHh/9oADAMBAAIRAxEAPwD6IIbEfLaO6JgMQqGIRIQnEBAMaiG1sdkQodAG0BBQwSHt5AAG0FD20IQqGNINthYqJ1QciJNJR+4uxDQDI0MQwAdAAAA6EBKIqAkuORMYAMAAaBDJJCGMiNE0IkNCGSREkAgJ0IzCGIx0XAIYBQCACUUCVgRSJNhLsRJdcIAAAIUMDN4lqXjxuS57Gkx+MwvBPyp/ia9C0tRC+rRGXRzfD/iCfLJGLXdPf2O9hywyK4O/LqjwWJpvfZLr19jqaDUShL5L39ZX+lelnss+kwahVOP8rszcx6Z6toSZVotZGezpS7WjRKJ5jWeMyaZ7lzH5lsMqlx7IAAHMLQAYAAAADoAAAHQAMAHV9CAjLKlzfv0Ksuav0XV/wc7VSlJ91+Xseg0HhuFkz/4/n8FE8vqJpyeKJPb6vkXabXRm6tX2PP5tna2/FP2L/DZL7WOz2ezuvI7OXDieKWNRSVfIrSd3Z6UkkJIdni0q7NDGMihjQhgADEUCGIy0WiAYBQxAABQAAAOgAAAKACOWHFGUe8WiY0Sh8Mk0DPKx0L+ba/emiWLTz/5peXE2/wAXSOjrYOGR7Onuq5+ZWpQfNb9bir/NHvsUlkgpr2ZJNoWDFJbxUa7tq39OvudLS+IR+5Nq+jbW/uinFvSUVy5y3+iRPJpV1lz/APVfqXOKap9FLlyb3HqiFBoNkotp9E/3NayR+647nFzeDxzlujLb9KLFqnHhqzJQGmWD8xZNNfJmF+AzW/iRP93Azkkib0rq+Ih/p59//gLwOde1/f4D91BibAg4zTqrKs+dx5x+pRPw+qT6v+Sazwfs0FWadft0XqWNOMd/vP6RK44u/wBDs+P8UsFTycy/pf8ASnJm3cLozTXr6r738lTXdp+a5+r62bZ4NvIw58ElbjzXNc213o6zsri0zm6yDUq7u78i7w/A1mj1Wz7dUWYHxtJx+6+f9/ux09JiXE35KjNlajjlN+k2X36NrAQ0eJ7ZeNDQkMkkRGAAMCgQwSKEiwQDYgaGIBgFAIAAKAAAaQJABJbCewidbfuLs5/i6XyttpbqzHjzY4ri4uJeST/JG7xvHxYuV/NE8utZLDNKKTt01yZ6zxOXdp19HRRkjbPWYM6cU4pU+u7+pTlhkl/l9EZ9NmjK5wk09ri9t/Q6GmnatqnyZ1uzG+COmwyh/lfW6o6eJOTTfQyP+DVhyEkVydmjK1svcsgnTdGfCrds3pUkMrZWsdr1LI4+oXsST2GIpUUU6jDFtNpbbmmijLEBo5+tfUyQyvrXpzOtPDsUSwLn+nQi0WqSopx5Pfy6ohmwKe8fvL2vyZn1Dp0ovnSrdyrukuQfa01z9f8AF+v7iZNL2iqSt8Ktd+50McK27JfXn+xCUbV2nLv5EsEKXO+bb7s5Xlp7dM186X+zRi5l9iwYhnk0aRjQhkkiLGAAOhFFDbFJiK3x0WgACIjGIAEAAAgAYAFjAYCGMCGpVwkvI8zq9HGbTrzTV2n6noc2o5pGbDpuR6rxODJjxvcqszZZpdGXQ6WnfXk+0l+51cUHW2/6ihDpX0NGGPX81s/X9zspGOUrIxVr0a/v0/I0YUt/Ico10q+ZXp/vMkVm3SR29zbPkZdNzNeV7JAQZWk2WNbBjew72GIokIWSW/ovxINgMnKP97FGWHf2RcpWEgGYM+NcNdX06e9fkcjVx+bh6uLaj1X0PROFLZe/YwSw3Jbc+pCXRdifJn0OBqL4u1svhyRsyYKjRmaOP5hJYEvqaMMt02wAQ0eYRqGSRFEkSSIsnwiEBba+REzCAVmQvGArFYhjsLI2FgAwFIXENqgJDsr4hpggJkM86i2PiOZ4lqbaSN2i0zy5V8iEnSHibZq4JVsjDo1cludzTxXI9nBcHOyOjl5PEFBf7jjX/k1E0eG+M4MjqM43241KvpdGD440C/02SfCrWObUqtx25o+X/Efh8Ma/2n9nLF9ycLUox78S3vZEMmb9NpP2ShjWRH27PkVenQh4e+p81/8Azz43lnUNPqp3klH5MrSisj3+Tnu667dVXJy99DUcLce/4l1lOw9DpOZPPzRR4dO0aErYyt9kojnKkRbopyyYCK73Y6M2q1ePFCWTJOMIxTlKUpKMYrzb2RxJ/F+nf/bWSa7xxy4fZtK0KU4x7ZOMHLpHo2OLZwfCPiTFnlOEFl4scuCUXjlBwlSdO12afuehhBvehpp9ClFx7LIxtEXpVzRKNlkJDI2Rkk1Rz8+GmdNoy6mBn1OnhmxuMkWYsjjLg54DYkeJlHbJo6gySIkkOhDAAHREyWKxNkWzOaB2JyItkbFTYydjuhPyI0a8Wiyy6RW5xXYOQWDK5yOhj8P7myt516JuRF5UUzZSzUvF4UQ/WZfn1FI5jlve5rnC9imeJo3afTxxL4URlOwx5Ka/VHe0uXZWcCUHs6l9Dq6HJt1VfQ2xKMitHV1OBZIOL3TTPnPj3wlni24R48bVUn88V0Vf5LpfbvzPo+LIqsvjO+zXoGTFHIqkVQySg+D8++M6T7HGoxxaiPDVSWGSlDhaceHbyX0Pp3hWrlm0unztNSnjhJp802lZ3fiPRp45VFOVWttzl+Gw4NPCHVWkuxDHiWPi7L3k3xs9B4VP5UdWLPP+HzpbnbjLZF6Ms1yXcNnnfizx/Ho4Rct5ZJxx44XXFN930SSbbPQSyJQb7HjvEvA4a6c1l4nFRUeFOt07tPmn5rsKXVLseONu30eG+LY6jPDI8src4ZIQx7/ZY+KLimo3V7t8XP6UdzwrxvPPBi074JzjjxQ4Yw+dcO3FKXJcv4PT/wDRumfCpKclFJJPLN1+O/udbw7wXDhVY8MYLyjRjhgy38UuDVLLj9Lko+GvCvsYOUt5zbnJ1Vyf8JL2O1YKNA4m2KUVSMcpOTtjQgSG4jESfIoyci1EZRADmZ47lZr1OMyHlfJ6Z48rklwzpYJ7okkMiiSOci1jAAJETnORByEk2TUSen0GXNzVItlkjEikWRiSjAlseg0/j8eJdcmSeZsjwicSSBm9QSKXJlTRCSLWiqQUKyqZWWyK+pCSJxJwxoeXGaMWPboWTxWWJcEXLk5s06/gnpZru169S2eHujLkhW6/gCXZ2cGbevc14J1Z57T5mn790/p2Opp9QTTsqlGjVr5JqzzeOdSdd3R1tVltPfoedhJrIo9/wQMeOJ3sGO65+h19NF0czRqt2dBZ9qJIU0XZ5WuHvzDR4OHZL3J4It0+hpcQoqviggi1SKUNsYixshKRU5jirACyLJBFEqACCRNx2CgYCMuogc7ItzqZmc/OjNqsKy42mXYZ7ZFSJIgiaPJzxODo6N2MAAgBgUSaRKSS5kOZ7FRSMbdj4g4SUYEuEkQsqURtEmVyYARkVSLJFGRgwRXMjGHV/kTlysgt31K/ZajZifqa4IxYEbYMtRVIc4IxajEvP8zc2Z8392BiRzViTdbfkXyUoc9135imr+9yIQUk/llxL/jJ7iiTfJdBqVr6+p57w2cpZpJreEnDfyZ2NPnUZbxat+xm+IPC2l/qtO2smNcTivu5Y9VJddvccuSWNpOn7OxHI+VFn2j2/qOTovFFNxX/ACjxHU8M0c8nz5Z7PfgSSil+b+ok76JZIqK5O5oMicE11NBXjSSpUKU/P0ouMTJsjJDj7jEBCONFqQ4xHwiACSTBBxAAUQZKTKnIYEJmPOjZNmfKhPkaMRJCktwR5rXY2p9HSxu4k6ELiAw3EnTMqi2XQxl8MJNwPYKJz3IpUSMi5oqkhiKZIqki2bM8mJkiM2Z5stkVtEGSRWolkYCVE4TXcEhlkYM1Y0yjHM0QZNEGydEZwLYtE+AZGzkajE/6rf4mfZ7SXo7+b6nflp7Rg1Gj6kGqJKRyc8Wur57WjZo9a9ltsL7C/lfbmZJeEU74pV2vYabJcM52vjjjqIUqXzPhT23a5HrNHr9kq2So83qPBIfe3ture/8Aepo0ejyRSUcj9Gr9GNcEpvdFcnq8eoTV8LLVk7JI4OGGfla535Ha02ndKydmdxo0Rk+/7F2OIseNItsCAyLYmwEAMAChgIUh0AAVyRnzGiZkygNGeSIWSkyFnB8g7lVnQwrgdgIRyKNJ0FEdE2hM9ocgpkijIjTIz5gY0ZMhU0XSRCSIEylxKciNagU5kJjTMcrHih3olJFfUiiZvxNGmBgxP++ZoxssRW0bMcTXjgjJhNkJokVsspFU8VjchpiYjBn0/kVQ80dbgTE9LFkaZJSOdLT2WYdIr9jZDSsvjhaGgcirFiSNUImCeeSnwqjSnKrHZFo0SXmVN7iSfUXJjEWIkkVpk0wAlQUR4h2MQ2QYORDiABTkZcrNUkZsqAaMsytls0V2cbyUE+zfp3wRAYjh7TUddojJAB7Q45VNGbMAASRlcgACJIjZTkGAhmaRmm9xgQZYiMZO6/tm7FKgAkgkbMWQ0wkMCaKmWRkWxYgGQLoyJxAAIljculC3a3fstgAQFaxJOycpUAAA1MUpAAwIqRKwAEA0iQAMRXIqkwABlbmVzmAASSKpFTYAcvyHRrwEOJAAHnm+TbR//9k="
+      width="400px"
+      alt="Editor illustration"
+    />
   </div>
 
   <footer>
     <p>
-      Autora: Adri
+      Autora: Adriana
     </p>
   </footer>
-
-  <button id = "reset-button" type = "button">Limpiar métricas</button>
 
 </body>
 </html>

@@ -14,7 +14,6 @@ const analyzer = {
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
     const datox = text.length;
-    //console.log(datox);
     return datox
   },
 
@@ -33,8 +32,6 @@ const analyzer = {
         }
       }
     }
-    
-    //console.log(datox);
     const cantidad = datox.length;
     return cantidad;
     
@@ -44,7 +41,6 @@ const analyzer = {
     const numeropalabras2 = numeropalabras(text);
     const datox = text.replace(/\s/g, "");
     const datoy = (datox.length)/numeropalabras2;
-    //console.log(typeof datoy);
     const numeroRedondeado = parseFloat(datoy.toFixed(2));
     return numeroRedondeado;
     
@@ -54,21 +50,17 @@ const analyzer = {
     const nuevo = text.split("");
     const ultimo = nuevo.pop();
     if(ultimo === '.'){
-      
       text = nuevo.join("");
     }
     /////
     const newtext = text.trim().split(" ");
     let conteo = 0;
-    
+
     for(let i = 0; i < newtext.length; i++){
-      //if(!isNaN(parseFloat(newtext[i]*1)))
       if(!isNaN(newtext[i]*1)){
         conteo = conteo + 1;
-
       }
     }
-  
     return conteo;
   },
 
@@ -77,7 +69,6 @@ const analyzer = {
     const nuevo = text.split("");
     const ultimo = nuevo.pop();
     if(ultimo === '.'){
-      
       text = nuevo.join("");
     }
     ////
@@ -88,7 +79,6 @@ const analyzer = {
       //if(!isNaN(parseFloat(newtext[i]*1)))
       if(!isNaN(newtext[i]*1)){
         conteo = conteo + newtext[i]*1;
-
       }
     }
     const numeroRedondeado = parseFloat(conteo.toFixed(2));
