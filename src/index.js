@@ -31,26 +31,26 @@ const resetbutton = document.getElementById("reset-button");
 
 
 resetbutton.addEventListener("click", function(){
-  const datotext = document.querySelector("textarea[name='user-input']");
-  datotext.value = "";
+  //const datotext = document.querySelector("textarea[name='user-input']");
+  input.value = "";
 
-  const clase1 = document.querySelectorAll(".datolista1")[0];
-  clase1.innerHTML = "Caracteres: 0";
+  //const clase1 = document.querySelectorAll(".datolista1")[0];
+  datolista1.innerHTML = "Caracteres: 0";
 
-  const clase2 = document.querySelectorAll(".datolista1")[1];
-  clase2.innerHTML = "Palabras: 0";
+  //const clase2 = document.querySelectorAll(".datolista1")[1];
+  datolista2.innerHTML = "Palabras: 0";
 
-  const clase3 = document.querySelectorAll(".datolista1")[2];
-  clase3.innerHTML = "Caracteres Sin Espacios: 0";
+  //const clase3 = document.querySelectorAll(".datolista1")[2];
+  datolista3.innerHTML = "Caracteres Sin Espacios: 0";
 
-  const clase4 = document.querySelectorAll(".datolista1")[3];
-  clase4.innerHTML = "Numeros: 0";
+  //const clase4 = document.querySelectorAll(".datolista1")[3];
+  datolista4.innerHTML = "Numeros: 0";
 
-  const clase5 = document.querySelectorAll(".datolista1")[4];
-  clase5.innerHTML = "Suma Numeros: 0";
+  //const clase5 = document.querySelectorAll(".datolista1")[4];
+  datolista5.innerHTML = "Suma Numeros: 0";
 
-  const clase6 = document.querySelectorAll(".datolista1")[5];
-  clase6.innerHTML = "Promedio Longitud: 0";
+  //const clase6 = document.querySelectorAll(".datolista1")[5];
+  datolista6.innerHTML = "Promedio Longitud: 0";
 
 })
                 

@@ -62,12 +62,12 @@ textarea[name="user-input"]{
     font-family: "Gill Sans Extrabold", sans-serif;
 }
 
-.contenedor {
+div[name="contenedor"] {
     display: flex;
     justify-content: center
 }
 
-.conten {
+div[name="conten"] {
     display: flex;
     justify-content: center;
     
@@ -78,7 +78,7 @@ textarea[name="user-input"]{
   }
 
 
-.contenbu {
+  div[name="contenbu"] {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
