@@ -29,11 +29,11 @@ ul {
     background-color: rgb(251, 183, 192);
     border: 1px solid rgb(251, 183, 192);
     border-radius: 10px;
-    margin: 5px; /* Ajusta el margen según lo necesario */
-    padding: 5px 10px; /* Ajusta el relleno según lo necesario */
-    font-size: medium; /* Tamaño de fuente más pequeño */
-    text-align: left; /* Texto centrado */
-    box-sizing: content-box; /* Tamaño total del cuadro incluyendo el borde */
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: medium;
+    text-align: left;
+    box-sizing: content-box;
     height: auto;
     font-family: "Gill Sans Extrabold", sans-serif;
   }
